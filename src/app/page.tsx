@@ -11,7 +11,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (status === "loading") return; // Still loading
+    if (status === "loading") return; 
 
     if (!session) {
       // User is not authenticated, redirect to signup
@@ -29,6 +29,7 @@ export default function Home() {
   }
 
   // If user is authenticated, show the home page
+  
   if (session) {
     return (
       <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -102,6 +103,6 @@ export default function Home() {
     );
   }
 
-  // This should not be reached, but just in case
+  
   return null;
 }

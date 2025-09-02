@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
 
     const { name, email, password, confirmPassword } = await req.json();
 
-    // Validation
+    // Validation  
     if (!name || !email || !password || !confirmPassword) {
       return NextResponse.json({ error: "All fields are required" }, { status: 400 });
     }

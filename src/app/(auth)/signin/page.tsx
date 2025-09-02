@@ -17,7 +17,7 @@ export default function SignInPage() {
     const res = await signIn("credentials", {
       email,
       password,
-      redirect: false,
+      redirect: true,
     });
 
     if (res?.error) {
@@ -42,14 +42,14 @@ export default function SignInPage() {
         )}
 
         {/* Form */} 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4" action='/'>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email Address"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f3786c] outline-none text-black"
           />
 
           <input
@@ -58,12 +58,12 @@ export default function SignInPage() {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f3786c] outline-none text-black"
           />
 
           <button
             type="submit"
-            className="w-full bg-amber-500 hover:bg-amber-700 text-white font-semibold py-3 rounded-lg transition duration-200"
+            className="w-full bg-[#f3786c] hover:bg-amber-700 text-white font-semibold py-3 rounded-lg transition duration-200"
           >
             Sign In
           </button>
@@ -95,7 +95,7 @@ export default function SignInPage() {
           Don&apos;t have an account?{" "}
           <Link
             href="/signup"
-            className="text-amber-600 font-semibold hover:underline"
+            className="text-[#f3786c] font-semibold hover:underline"
           >
             Sign Up
           </Link>

@@ -79,7 +79,7 @@ export default function SignUpPage() {
             onChange={(e) => setName(e.target.value)}
             placeholder="Full Name"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f3786c] outline-none text-black"
           />
 
           <input
@@ -88,7 +88,7 @@ export default function SignUpPage() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email Address"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f3786c] outline-none text-black"
           />
 
           <input
@@ -97,7 +97,7 @@ export default function SignUpPage() {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f37863] outline-none text-black"
           />
 
           <input
@@ -106,13 +106,13 @@ export default function SignUpPage() {
             onChange={(e) => setConfirmPassword(e.target.value)}
             placeholder="Confirm Password"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-black"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#f3786c] outline-none text-black"
           />
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-amber-500 hover:bg-amber-700 disabled:bg-amber-300 text-white font-semibold py-3 rounded-lg transition duration-200"
+            className="w-full bg-[#f3786c] hover:bg-amber-700 disabled:bg-amber-300 text-white font-semibold py-3 rounded-lg transition duration-200"
           >
             {loading ? "Signing Up..." : "Sign Up"}
           </button>
@@ -144,7 +144,7 @@ export default function SignUpPage() {
           Already have an account?{" "}
           <Link
             href="/signin"
-            className="text-amber-600 font-semibold hover:underline"
+            className="text-[#f3786c] font-semibold hover:underline"
           >
             Sign In
           </Link>
